@@ -1,0 +1,91 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+
+local Window = OrionLib:MakeWindow({Name = "Fire Hub || [💎MINE] Pet Simulator X! 🐾", HidePremium = false, SaveConfig = true, ConfigFolder = "FireHub"})
+
+local Tab1 = Window:MakeTab({
+	Name = "Trade Scam",
+	Icon = "rbxassetid://9695309046",
+	PremiumOnly = false
+})
+
+local Section1 = Tab1:AddSection({
+	Name = "Main"
+})
+
+Section1:AddToggle({
+	Name = "Trade Scam",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Section1:AddSlider({
+	Name = "Scam Interval (ms)",
+	Min = 1,
+	Max = 15,
+	Default = 1,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+
+local Tab2 = Window:MakeTab({
+	Name = "Booth Scam",
+	Icon = "rbxassetid://12804017021",
+	PremiumOnly = false
+})
+
+local Section2 = Tab2:AddSection({
+	Name = "Main"
+})
+
+Section2:AddToggle({
+	Name = "Booth Scam",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Section2:AddSlider({
+	Name = "Scam Interval (ms)",
+	Min = 1,
+	Max = 15,
+	Default = 1,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab2:AddTextbox({
+	Name = "Booth Owner Username",
+	Default = "",
+	TextDisappear = false,
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+Tab2:AddTextbox({
+	Name = "Scam Price",
+	Default = "",
+	TextDisappear = false,
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+
+
+
+
+OrionLib:Init()
